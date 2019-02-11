@@ -1,0 +1,164 @@
+html,body {
+  box-sizing: border-box;
+}
+*, *:before, *:after { box-sizing: inherit; }
+ 
+/* Set full height: http://stackoverflow.com/questions/6654958/make-body-have-100-of-the-browser-height */
+html {
+  /* body will set it's height based on its parent, which is html */
+  height: 100%;
+  /* set full width as well */
+  width: 100%;
+}
+
+body {
+  /* min-height is needed for pages that might scroll, ie they may contain _more_ than 100% of viewport height */
+  min-height: 100%;
+  /* needed to prevent unwanted scroll-bars */
+  margin: 0;
+  padding: 0; 
+  /* This is just so we can tell the body block apart from the app container */
+  background-color: #012169;
+}
+
+/* Full height centered app container */
+#app-container {
+  /* Set block height using the viewport height unit, and force it to be full height, even if the containing content does not require it */
+  min-height: 100vh;
+  /* center this block for larger viewports */
+  margin: 0 auto;
+  /*Use max-width for better browser handling of small windows
+  http://www.w3schools.com/css/css_max-width.asp
+  */
+  max-width: 31.25em;
+  /* Use min-width to prevent your design from being scrunched up in tiny viewports (and instead be replaced with horizontal scroll bars) 
+  */
+  min-width: 18.75em;
+  /* just used to so we can tell the content block apart from the body block */
+  background-color: white;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 4px;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 8px;
+}
+
+.margin-bottom-3 {
+  margin-bottom: 16px;
+}
+
+.margin-bottom-4 {
+  margin-bottom: 24px;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 48px;
+}
+
+.padding-1 {
+  padding: 4px;
+}
+
+.padding-2 {
+  padding: 8px;
+}
+
+.padding-3 {
+  padding: 16px;
+}
+
+.padding-4 {
+  padding: 24px;
+}
+
+.padding-5 {
+  padding: 48px;
+}
+
+
+
+.app-header {
+  width: 100%;
+  position: relative;
+  height: 150px;
+  margin-bottom: 100px;
+
+  * {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &.page {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    position: absolute;
+    width: 80%;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    top: 0;
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background: linear-gradient(#012169,#ffffff, #f76100);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 37%, 50% 50%, 0 37%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 37%, 50% 50%, 0 37%);
+  }
+
+}
+
+.login {
+  background: #ededed;
+  margin: 0 12px;
+  padding: 40px 16px;
+  border-radius: 6px;
+
+  .button {
+    height: 60px;
+    width: 100%;
+    background-color: #f76100;
+    text-align: center;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-container {
+  padding: 40px 20px;
+
+  &.event-details {
+    padding-top: 20px;
+  }
+
+  .button {
+    width: 100%;
+    background-color: #ededed;
+
+    .icon {
+      height: 80px;
+      width: 80px;
+      background: #012169;
+    }
+  }
+}
