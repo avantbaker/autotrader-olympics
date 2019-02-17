@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from './components/pages/Login';
 import Events from './components/pages/Events';
 import EventDetails from './components/pages/EventDetails';
+import TeamList from './components/pages/TeamList';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
             <Route exact path="/" component={Login} />
             <Route exact path="/events" component={Events} />
             <Route path="/events/:event" component={EventDetails} />
+            <Route path="/teams" component={TeamList} />
           </Switch>
         </div>
       </Router>
