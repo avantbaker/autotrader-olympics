@@ -1,12 +1,14 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../commons/Header';
 import Listing from '../molecules/Listing';
+import ProfileIcon from '../commons/ProfileIcon.js'
 
 class TeamList extends Component {
     render() {
         return (
             <Fragment>
                 <Header className="page">
+                    <ProfileIcon />
                 </Header>
                 <div className="container page-container event-details">
                     <div className="row">
