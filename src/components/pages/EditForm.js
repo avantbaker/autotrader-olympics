@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../commons/Header';
 
-
 class EditForm extends Component {
     render() {
         return(

@@ -42,6 +42,10 @@ body {
   margin: 20px
 }
 
+.margin-left-1 {
+  margin-left: 4px;
+}
+
 .margin-bottom-1 {
   margin-bottom: 4px;
 }
@@ -153,11 +157,11 @@ body {
     color: #ffffff;
     margin-bottom: 20px;
     border-radius: 6px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
+      
+  a:last-child .button {
+      margin-bottom: 0 !important;
+    }
 }
 
 .page-container {

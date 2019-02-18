@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <MemoryRouter 
-        initialEntries={["/", "/events", "/events/:event", "teams" ]}
+        initialEntries={["/", "/events", "/events/:event", "/teams" ]}
       >
         <div id="app-container">
           <Switch>
