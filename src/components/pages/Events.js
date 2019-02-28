@@ -1,13 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import Listing from '../molecules/Listing';
 import Header from '../commons/Header';
+import ProfileIcon from '../commons/ProfileIcon'
 
 class Events extends Component {
   render() {
     return (
       <Fragment>
         <Header className="page">
-          <h1>Events</h1>
+          <h1 className="title">Events</h1>
+          <ProfileIcon />
         </Header>
         <div className="container page-container">
           <div className="row">

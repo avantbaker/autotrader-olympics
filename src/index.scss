@@ -38,6 +38,14 @@ body {
   background-color: white;
 }
 
+.margin-2 {
+  margin: 20px
+}
+
+.margin-left-1 {
+  margin-left: 4px;
+}
+
 .margin-bottom-1 {
   margin-bottom: 4px;
 }
@@ -122,6 +130,18 @@ body {
 
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.profileIcon {
+    margin: 10px 0px 0px 10px;
+
+}
+
 .login {
   background: #ededed;
   margin: 0 12px;
@@ -137,11 +157,11 @@ body {
     color: #ffffff;
     margin-bottom: 20px;
     border-radius: 6px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
+      
+  a:last-child .button {
+      margin-bottom: 0 !important;
+    }
 }
 
 .page-container {
@@ -162,3 +182,4 @@ body {
     }
   }
 }
+
