@@ -1,18 +1,26 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
-  const Team = sequelize.define(
-    'Team', 
-    {
-      name: DataTypes.STRING,
-      members: DataTypes.ARRAY(DataTypes.INTEGER),
-      color: DataTypes.STRING,
-      imgSrc: DataTypes.STRING
-    }, 
-    {}
-  );
-  Team.associate = function(models) {
-    // associations can be defined here
-    Team.hasMany(models.User)
-  };
-  return Team;
-};
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const TeamSchema = new Schema({
+	name: {
+		type: String,
+		required: true
+	},
+	members: [
+		{
+			type: String,
+			required: true
+		}
+	],
+	color: {
+		type: String,
+		required: true
+	},
+	imgSrc: {
+		type: String,
+		required: true
+	}
+});
+
+const Team = mongoose.model('Team', TeamSchema);
+module.exports = Team;
