@@ -86,7 +86,17 @@ body {
   padding: 48px;
 }
 
+.font-2 {
+  font-size: 18px;
+}
 
+.color-grey {
+  color: grey;
+}
+
+.places-image {
+  height: 70px;
+}
 
 .app-header {
   width: 100%;
@@ -139,7 +149,6 @@ body {
 
 .profileIcon {
     margin: 10px 0px 0px 10px;
-
 }
 
 .login {
@@ -176,8 +185,9 @@ body {
     background-color: #ededed;
 
     .icon {
-      height: 80px;
-      width: 80px;
+      max-width: 100px;
+      height: 100%;
+      width: max-content;
       background: #012169;
     }
   }

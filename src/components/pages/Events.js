@@ -2,9 +2,13 @@ import React, { Component, Fragment } from 'react';
 import Listing from '../molecules/Listing';
 import Header from '../commons/Header';
 import ProfileIcon from '../commons/ProfileIcon'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 
 class Events extends Component {
   render() {
+    const plusIcon = <FontAwesomeIcon className="margin-left-1" size="2x" icon={faPlusSquare} />;
+
     return (
       <Fragment>
         <Header className="page">
@@ -16,31 +20,31 @@ class Events extends Component {
             <div className="col-sm-12">
                 <Listing 
                   topLeftContent={"Place"}
-                  topRightContent={"Join"}
+                  topRightContent={plusIcon}
                   bottomLeftContent={"Event Name"}
                   bottomRightContent={"Spots"}
                 />
                 <Listing 
                   topLeftContent={"Place"}
-                  topRightContent={"Join"}
+                  topRightContent={plusIcon}
                   bottomLeftContent={"Event Name"}
                   bottomRightContent={"Spots"}
                 />
                 <Listing 
                   topLeftContent={"Place"}
-                  topRightContent={"Join"}
+                  topRightContent={plusIcon}
                   bottomLeftContent={"Event Name"}
                   bottomRightContent={"Spots"}
                 />
                 <Listing 
                   topLeftContent={"Place"}
-                  topRightContent={"Join"}
+                  topRightContent={plusIcon}
                   bottomLeftContent={"Event Name"}
                   bottomRightContent={"Spots"}
                 />
                 <Listing 
                   topLeftContent={"Place"}
-                  topRightContent={"Join"}
+                  topRightContent={plusIcon}
                   bottomLeftContent={"Event Name"}
                   bottomRightContent={"Spots"}
                 />
