@@ -1,38 +1,58 @@
-import React, { Component, Fragment } from 'react';
-import Logo from '../../assets/atc_olympics.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBomb } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
-import Header from '../commons/Header';
+import React, { Component } from 'react';
+import Logo from '../../assets/logo.png';
 
 class Login extends Component {
+
+  constructor(props) {
+    super(props);
+    this.login = this.login.bind(this);
+  }
+  login() {
+    window.location.href = 'http://localhost:8000/auth/github';
+  }
+  
   render() {
     return (
-      <Fragment>
-        <Header>
-          <img className="logo" src={Logo} alt="Autotrader Olympics Logo" />
-        </Header>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12 text-center">
-              <h1 className="margin-bottom-5">Autotrader<br />Olypics</h1>
-            </div> 
-            <div className="col-sm-12">
-              <div className="login">
-                  <Link to="/events">
-                    <div className="button">Sign In</div>
-                  </Link>
-                  <Link to="/events">
-                  <div className="button">Sign Up via Github <FontAwesomeIcon className="margin-left-1" size="1x" icon={faBomb} /></div>
-                  </Link>
-                  <Link to="/events">
-                    <div className="button">Download App</div>
-                  </Link>
-              </div>
-            </div>
+      <div className="login-page d-flex flex-column justify-content-center">
+        <div className="container"> 
+          <div className="logo-container">
+            <img 
+              className="logo" 
+              src={Logo} 
+              alt="Autotrader Olympics Logo" 
+            />
           </div>
         </div>
-      </Fragment>
+        <div className="container login-container">
+          
+          <div className="login-section">
+            
+            <div className="login-section-header">
+              <h5>Welcome To The</h5>
+              <h2>Autotrader</h2>
+              <h1>OLYMPICS</h1>
+            </div>
+            
+            <h5 className="tight mb-4">
+              First, a certified pre-owned car can be better than a traditional 
+              used vehicle because regular used cars often come.
+            </h5>
+
+            <div className="button-wrapper">
+              <div 
+                className="btn btn-secondary" 
+                onClick={this.login}
+              >
+                <span>Sign in via Github</span>
+              </div>
+              <div className="btn btn-secondary">
+                <span>Download App to Home Screen</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     );
   }
 }

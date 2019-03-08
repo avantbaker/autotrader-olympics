@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, MemoryRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from './components/pages/Login';
 import Events from './components/pages/Events';
 import EventDetails from './components/pages/EventDetails';
@@ -9,9 +9,7 @@ import EditForm from './components/pages/EditForm';
 class App extends Component {
   render() {
     return (
-      <MemoryRouter 
-        initialEntries={["/", "/events", "/events/:event", "/teams" ]}
-      >
+      <Router>
         <div id="app-container">
           <Switch>
             <Route exact path="/" component={Login} />
@@ -21,7 +19,7 @@ class App extends Component {
             <Route path="/edit" component={EditForm} />
           </Switch>
         </div>
-      </MemoryRouter>
+      </Router>
     );
   }
 }
