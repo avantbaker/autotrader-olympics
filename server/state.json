@@ -2,163 +2,221 @@
     "teams": {
         "1": {
             "id": 1,
-            "name": "Spain",
-            "contact": "Roberto Mertz",
-            "email": "Lula86@yahoo.com",
+            "name": "Australia",
+            "contact": "Pietro Boyle",
+            "email": "Imelda_Heidenreich@yahoo.com",
             "events": {
                 "basketball": [
-                    "Malvina Hand"
+                    "Jess Koelpin"
                 ],
                 "typing": [
-                    "Rahsaan Cole"
+                    "Wilhelm Goldner"
                 ],
                 "jump": [
-                    "Valentine Bechtelar"
+                    "Bartholome Donnelly"
                 ],
                 "airplane": [
-                    "Schuyler Schultz"
+                    "Nick Sanford"
                 ],
                 "skeleton": [
-                    "Wilton Little"
+                    "Mckenzie Hamill"
                 ],
                 "biathalon": [
-                    "Joshuah Sawayn"
+                    "Rahul Wehner"
                 ],
                 "balloon": [
-                    "Eloisa Lockman"
+                    "Raymond Johnston"
                 ],
                 "curling": [
-                    "Orpha Labadie"
+                    "Wilhelmine Zieme"
                 ]
             }
         },
         "2": {
             "id": 2,
             "name": "Germany",
-            "contact": "Lavern Dach",
-            "email": "Tyra.Stroman@gmail.com",
+            "contact": "Adrienne Hoeger",
+            "email": "Keyon_Purdy@yahoo.com",
             "events": {
                 "basketball": [
-                    "Mariana Walsh"
+                    "Reed Labadie"
                 ],
                 "typing": [
-                    "Darwin Fahey"
+                    "Kristy Schroeder"
                 ],
                 "jump": [
-                    "Ottilie Wyman"
+                    "Vesta Hessel"
                 ],
                 "airplane": [
-                    "Miracle Veum"
+                    "Edna Cronin"
                 ],
                 "skeleton": [
-                    "Randal Donnelly"
+                    "Laurianne Stehr"
                 ],
                 "biathalon": [
-                    "Golda Bartell"
+                    "Jamal Gusikowski"
                 ],
                 "balloon": [
-                    "Junior Eichmann"
+                    "Giovani Volkman"
                 ],
                 "curling": [
-                    "Joey Swift"
+                    "Dariana Cartwright"
                 ]
             }
         },
         "3": {
             "id": 3,
             "name": "Russia",
-            "contact": "Luigi Doyle",
-            "email": "Rebeca62@yahoo.com",
+            "contact": "Tyrel Lowe",
+            "email": "Lennie_Torphy96@hotmail.com",
             "events": {
                 "basketball": [
-                    "Joaquin Cole"
+                    "Laney Osinski"
                 ],
                 "typing": [
-                    "Marjory Torphy"
+                    "Brandyn Wolff"
                 ],
                 "jump": [
-                    "Lamont Lueilwitz"
+                    "Kiera Altenwerth"
                 ],
                 "airplane": [
-                    "Neil Thompson"
+                    "Humberto Kohler"
                 ],
                 "skeleton": [
-                    "Zackary Hilll"
+                    "Pat Collier"
                 ],
                 "biathalon": [
-                    "Ayla Davis"
+                    "Marilyne Homenick"
                 ],
                 "balloon": [
-                    "Sincere Connelly"
+                    "Rosario Braun"
                 ],
                 "curling": [
-                    "Casimir Conn"
+                    "Lavinia Durgan"
                 ]
             }
         },
         "4": {
             "id": 4,
             "name": "India ",
-            "contact": "Shad Rath",
-            "email": "Allen.Bins@yahoo.com",
+            "contact": "Margaret Lueilwitz",
+            "email": "Benedict_Thompson78@gmail.com",
             "events": {
                 "basketball": [
-                    "Kiera Hintz"
+                    "Laurie Pfeffer"
                 ],
                 "typing": [
-                    "Jasen Stanton"
+                    "Sarai Will"
                 ],
                 "jump": [
-                    "Frederik Mueller"
+                    "Vernice Boehm"
                 ],
                 "airplane": [
-                    "Dasia Larson"
+                    "Jack Predovic"
                 ],
                 "skeleton": [
-                    "Ebba Kassulke"
+                    "Aaliyah Jones"
                 ],
                 "biathalon": [
-                    "Jennifer Effertz"
+                    "Trudie Hermann"
                 ],
                 "balloon": [
-                    "Angeline Rowe"
+                    "Maia Bashirian"
                 ],
                 "curling": [
-                    "Lawrence Tromp"
+                    "Lloyd Lockman"
                 ]
             }
         },
         "5": {
             "id": 5,
             "name": "Norway",
-            "contact": "Carlos Grady",
-            "email": "Tressa_Schamberger22@yahoo.com",
+            "contact": "Pearline Jaskolski",
+            "email": "Eliseo.Feeney@yahoo.com",
             "events": {
                 "basketball": [
-                    "Marlin Ledner"
+                    "Myrtis Pacocha"
                 ],
                 "typing": [
-                    "Lacy Macejkovic"
+                    "Elena Fritsch"
                 ],
                 "jump": [
-                    "Lottie Renner"
+                    "Floyd Gaylord"
                 ],
                 "airplane": [
-                    "Mafalda Hagenes"
+                    "Gerson Monahan"
                 ],
                 "skeleton": [
-                    "Carleton Lindgren"
+                    "Karson Abshire"
                 ],
                 "biathalon": [
-                    "Clementine Ledner"
+                    "Orie Purdy"
                 ],
                 "balloon": [
-                    "Delmer Turcotte"
+                    "Isadore O'Reilly"
                 ],
                 "curling": [
-                    "Jammie Kassulke"
+                    "Wilton Jenkins"
                 ]
             }
+        }
+    },
+    "events": {
+        "basketball": {
+            "name": "Trashcan Basketball",
+            "description": "Sample Description",
+            "location": "Sample Location",
+            "time": "12pm",
+            "results": {}
+        },
+        "typing": {
+            "name": "Finger Skating",
+            "description": "Sample Description",
+            "location": "Sample Location",
+            "time": "12pm",
+            "results": {}
+        },
+        "jump": {
+            "name": "Long Jump",
+            "description": "Sample Description",
+            "location": "Sample Location",
+            "time": "12pm",
+            "results": {}
+        },
+        "airplane": {
+            "name": "Paper Airplane Javelin",
+            "description": "Sample Description",
+            "location": "Sample Location",
+            "time": "12pm",
+            "results": {}
+        },
+        "skeleton": {
+            "name": "Skeleton",
+            "description": "Sample Description",
+            "location": "Sample Location",
+            "time": "12pm",
+            "results": {}
+        },
+        "biathalon": {
+            "name": "Biathlon",
+            "description": "Sample Description",
+            "location": "Sample Location",
+            "time": "12pm",
+            "results": {}
+        },
+        "balloon": {
+            "name": "Balloon Dash",
+            "description": "Sample Description",
+            "location": "Sample Location",
+            "time": "12pm",
+            "results": {}
+        },
+        "curling": {
+            "name": "Chair Curling",
+            "description": "Sample Description",
+            "location": "Sample Location",
+            "time": "12pm",
+            "results": {}
         }
     }
 }

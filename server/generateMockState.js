@@ -50,6 +50,88 @@ const teams = Array.from({ length: 6 }).reduce((acc, team, index) => ({
 
 fs.writeJson('./server/state.json', {
 	teams: teams,
+    events: {
+        basketball: {
+            name: 'Trashcan Basketball',
+            description: 'Sample Description',
+            location: 'Sample Location',
+            time: '12pm',
+            results: {
+
+            },
+        },
+                                                
+        typing: {
+            name: 'Finger Skating',
+            description: 'Sample Description',
+            location: 'Sample Location',
+            time: '12pm',
+            results: {
+
+            },
+        },
+                                                
+        jump: {
+            name: 'Long Jump',
+            description: 'Sample Description',
+            location: 'Sample Location',
+            time: '12pm',
+            results: {
+
+            },
+        },
+                                                
+        airplane: {
+            name: 'Paper Airplane Javelin',
+            description: 'Sample Description',
+            location: 'Sample Location',
+            time: '12pm',
+            results: {
+
+            },
+        },
+                                                
+        skeleton: {
+            name: 'Skeleton',
+            description: 'Sample Description',
+            location: 'Sample Location',
+            time: '12pm',
+            results: {
+
+            },
+        },
+                                                
+        biathalon: {
+            name: 'Biathlon',
+            description: 'Sample Description',
+            location: 'Sample Location',
+            time: '12pm',
+            results: {
+
+            },
+        },
+                                                
+        balloon: {
+            name: 'Balloon Dash',
+            description: 'Sample Description',
+            location: 'Sample Location',
+            time: '12pm',
+            results: {
+
+            },
+        },
+                                                
+        curling: {
+            name: 'Chair Curling',
+            description: 'Sample Description',
+            location: 'Sample Location',
+            time: '12pm',
+            results: {
+
+            },
+        },
+                                                
+    },
 }, { spaces: 4});
 
 console.log('saved mock state to ./server/state.json');

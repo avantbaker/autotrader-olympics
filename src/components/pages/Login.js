@@ -37,11 +37,19 @@ class Login extends Component {
             </div>
             
             <h5 className="tight mb-4">
-              First, a certified pre-owned car can be better than a traditional 
-              used vehicle because regular used cars often come.
+              <p>As celebratory tears streamed down victorious cheeks, and medals, gold and silver alike, were held aloft, 
+it was one year ago that the closing ceremonies brought the first Autotrader Olympic games to an end.  
+The elation of success and the anguish of defeat, both mental and physical, was experienced as 
+team members from the furthest reaches of the 11th floor came together as one.</p>
+
+<p>It is time to rise again to meet the challenges, both new and old.  There are records to be beaten.  
+There are rivalries to be re-ignited.  And there is honor (and probably prizes) to be secured.</p>
+
+<p>Here...  Now...  The Second Annual Autotrader Olympic Games are upon us!</p>
+
             </h5>
 
-            <div className="button-wrapper">
+            <div className="button-toolbar">
               {/*<div 
                 className="btn btn-secondary" 
                 onClick={this.login}
@@ -52,19 +60,19 @@ class Login extends Component {
                 to={'team/create'}
                 className="btn btn-primary"
               >
-                  Add New Team
+                  Create New Team
               </Link>
               <Link
                 to={'teams'}
                 className="btn btn-secondary"
               >
-                  Edit Existing Team
+                  Teams
               </Link>
               <Link
-                to={'add-team'}
+                to={'events'}
                 className="btn btn-secondary"
               >
-                  Individual Entries
+                  Events
               </Link>
             </div>
 

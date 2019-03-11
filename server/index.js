@@ -30,6 +30,12 @@ app.get('/api/teams', (req, res) => {
 	res.send(data);
 });
 
+// Get all events
+app.get('/api/events', (req, res) => {
+	const data = _get(getState(), 'events', {});
+	res.send(data);
+});
+
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

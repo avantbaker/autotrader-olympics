@@ -33,8 +33,6 @@ class TeamList extends Component {
 }
 
 const mapStateToProps = (state) => {
-    
-console.log("teamsDuck.selectors.getTeams(state),", teamsDuck.selectors.getTeams(state),);
     return {
         teams: teamsDuck.selectors.getTeams(state),
     };
@@ -43,4 +41,4 @@ console.log("teamsDuck.selectors.getTeams(state),", teamsDuck.selectors.getTeams
 export default connect(mapStateToProps, mapActions({
     createTeam: teamsDuck.creators.createTeam,
     loadTeams: teamsDuck.creators.loadTeams,
-}))(TeamList);;
+}))(TeamList);
