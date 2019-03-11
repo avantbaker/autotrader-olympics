@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Image from '../commons/Image.js'
 
 const Listing = ({ 
@@ -10,7 +9,6 @@ const Listing = ({
   image
 }) => {
   return (
-    <Link to="/events/something">
       <div className="button d-flex flex-row margin-bottom-3">
         <Image image={image} />
         <div className="d-flex flex-grow-1 justify-content-between padding-2">
@@ -24,7 +22,6 @@ const Listing = ({
           </div>
         </div>
       </div>
-    </Link>
   );
 }
 

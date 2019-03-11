@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Logo from '../../assets/logo.png';
-
+import { Link } from 'react-router-dom';
+import {
+    Container,
+} from 'react-bootstrap';
 class Login extends Component {
 
   constructor(props) {
@@ -14,7 +17,7 @@ class Login extends Component {
   render() {
     return (
       <div className="login-page d-flex flex-column justify-content-center">
-        <div className="container"> 
+        <Container> 
           <div className="logo-container">
             <img 
               className="logo" 
@@ -22,8 +25,8 @@ class Login extends Component {
               alt="Autotrader Olympics Logo" 
             />
           </div>
-        </div>
-        <div className="container login-container">
+        </Container>
+        <Container className="login-container">
           
           <div className="login-section">
             
@@ -39,19 +42,34 @@ class Login extends Component {
             </h5>
 
             <div className="button-wrapper">
-              <div 
+              {/*<div 
                 className="btn btn-secondary" 
                 onClick={this.login}
               >
                 <span>Sign in via Github</span>
-              </div>
-              <div className="btn btn-secondary">
-                <span>Download App to Home Screen</span>
-              </div>
+              </div>*/}
+              <Link
+                to={'team/create'}
+                className="btn btn-primary"
+              >
+                  Add New Team
+              </Link>
+              <Link
+                to={'teams'}
+                className="btn btn-secondary"
+              >
+                  Edit Existing Team
+              </Link>
+              <Link
+                to={'add-team'}
+                className="btn btn-secondary"
+              >
+                  Individual Entries
+              </Link>
             </div>
 
           </div>
-        </div>
+        </Container>
       </div>
     );
   }

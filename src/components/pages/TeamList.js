@@ -1,39 +1,28 @@
 import React, { Component, Fragment } from 'react';
+import { connect } from 'react-redux'
+
 import Header from '../commons/Header';
-import Listing from '../molecules/Listing';
-import ProfileIcon from '../commons/ProfileIcon.js'
+import TeamListing from '../molecules/TeamListing';
+import teamsDuck from '../../redux/teamsDuck';
+import mapActions from '../../redux/mapActions';
 
 class TeamList extends Component {
+
+    componentDidMount() {
+        this.props.actions.loadTeams();
+    }
+
     render() {
         return (
             <Fragment>
                 <Header className="page">
-                    <ProfileIcon />
+                    <h1 className="title">Teams</h1>
                 </Header>
                 <div className="container page-container event-details">
                     <div className="row">
                         <div className="col-sm-12">
-                            <div>
-                                <h1>Teams</h1>
-                            </div>
-                            <hr />
                             <div className="text-center">
-                                <Listing
-                                    topLeftContent={"Roster"}
-                                    bottomLeftContent={"Team Name"}
-                                />
-                                <Listing
-                                    topLeftContent={"Roster"}
-                                    bottomLeftContent={"Team Name"}
-                                />
-                                <Listing
-                                    topLeftContent={"Roster"}
-                                    bottomLeftContent={"Team Name"}
-                                />
-                                <Listing
-                                    topLeftContent={"Roster"}
-                                    bottomLeftContent={"Team Name"}
-                                />
+                                {this.props.teams.map(team => <TeamListing key={team.id} team={team} />)}
                             </div>
                         </div>
                     </div>
@@ -43,4 +32,15 @@ class TeamList extends Component {
     }
 }
 
-export default TeamList;
+const mapStateToProps = (state) => {
+    
+console.log("teamsDuck.selectors.getTeams(state),", teamsDuck.selectors.getTeams(state),);
+    return {
+        teams: teamsDuck.selectors.getTeams(state),
+    };
+};
+
+export default connect(mapStateToProps, mapActions({
+    createTeam: teamsDuck.creators.createTeam,
+    loadTeams: teamsDuck.creators.loadTeams,
+}))(TeamList);;

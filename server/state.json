@@ -1,0 +1,164 @@
+{
+    "teams": {
+        "1": {
+            "id": 1,
+            "name": "Spain",
+            "contact": "Roberto Mertz",
+            "email": "Lula86@yahoo.com",
+            "events": {
+                "basketball": [
+                    "Malvina Hand"
+                ],
+                "typing": [
+                    "Rahsaan Cole"
+                ],
+                "jump": [
+                    "Valentine Bechtelar"
+                ],
+                "airplane": [
+                    "Schuyler Schultz"
+                ],
+                "skeleton": [
+                    "Wilton Little"
+                ],
+                "biathalon": [
+                    "Joshuah Sawayn"
+                ],
+                "balloon": [
+                    "Eloisa Lockman"
+                ],
+                "curling": [
+                    "Orpha Labadie"
+                ]
+            }
+        },
+        "2": {
+            "id": 2,
+            "name": "Germany",
+            "contact": "Lavern Dach",
+            "email": "Tyra.Stroman@gmail.com",
+            "events": {
+                "basketball": [
+                    "Mariana Walsh"
+                ],
+                "typing": [
+                    "Darwin Fahey"
+                ],
+                "jump": [
+                    "Ottilie Wyman"
+                ],
+                "airplane": [
+                    "Miracle Veum"
+                ],
+                "skeleton": [
+                    "Randal Donnelly"
+                ],
+                "biathalon": [
+                    "Golda Bartell"
+                ],
+                "balloon": [
+                    "Junior Eichmann"
+                ],
+                "curling": [
+                    "Joey Swift"
+                ]
+            }
+        },
+        "3": {
+            "id": 3,
+            "name": "Russia",
+            "contact": "Luigi Doyle",
+            "email": "Rebeca62@yahoo.com",
+            "events": {
+                "basketball": [
+                    "Joaquin Cole"
+                ],
+                "typing": [
+                    "Marjory Torphy"
+                ],
+                "jump": [
+                    "Lamont Lueilwitz"
+                ],
+                "airplane": [
+                    "Neil Thompson"
+                ],
+                "skeleton": [
+                    "Zackary Hilll"
+                ],
+                "biathalon": [
+                    "Ayla Davis"
+                ],
+                "balloon": [
+                    "Sincere Connelly"
+                ],
+                "curling": [
+                    "Casimir Conn"
+                ]
+            }
+        },
+        "4": {
+            "id": 4,
+            "name": "India ",
+            "contact": "Shad Rath",
+            "email": "Allen.Bins@yahoo.com",
+            "events": {
+                "basketball": [
+                    "Kiera Hintz"
+                ],
+                "typing": [
+                    "Jasen Stanton"
+                ],
+                "jump": [
+                    "Frederik Mueller"
+                ],
+                "airplane": [
+                    "Dasia Larson"
+                ],
+                "skeleton": [
+                    "Ebba Kassulke"
+                ],
+                "biathalon": [
+                    "Jennifer Effertz"
+                ],
+                "balloon": [
+                    "Angeline Rowe"
+                ],
+                "curling": [
+                    "Lawrence Tromp"
+                ]
+            }
+        },
+        "5": {
+            "id": 5,
+            "name": "Norway",
+            "contact": "Carlos Grady",
+            "email": "Tressa_Schamberger22@yahoo.com",
+            "events": {
+                "basketball": [
+                    "Marlin Ledner"
+                ],
+                "typing": [
+                    "Lacy Macejkovic"
+                ],
+                "jump": [
+                    "Lottie Renner"
+                ],
+                "airplane": [
+                    "Mafalda Hagenes"
+                ],
+                "skeleton": [
+                    "Carleton Lindgren"
+                ],
+                "biathalon": [
+                    "Clementine Ledner"
+                ],
+                "balloon": [
+                    "Delmer Turcotte"
+                ],
+                "curling": [
+                    "Jammie Kassulke"
+                ]
+            }
+        }
+    }
+}

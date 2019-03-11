@@ -1,12 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 const Image = (props) => {
-    console.log(props, 'image');
-    return (
-        <Fragment>
-            <img className="icon" src={props.image} alt="eventPic" />
-        </Fragment>
-    )
+    return <img className="icon" src={props.image} alt="eventPic" />
 }
 
 Image.defaultProps = {
